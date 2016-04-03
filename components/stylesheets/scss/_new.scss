@@ -1,0 +1,242 @@
+$font-stack: Helvetica,
+sans-serif;
+$primary-color: #333;
+$blue: #03A9F4;
+$white: #fff;
+$grey: #444;
+$mobile: 768px;
+$tablet: 992px;
+$desktop: 1200px;
+// include padding in box model
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    border-box: inherit;
+}
+
+body,
+#window {
+    font: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    width: 100%;
+}
+
+.blue {
+    background-color: $blue;
+}
+
+// needed for centering divs
+.container {
+    position: relative;
+}
+
+#wrapper {
+    background-color: $blue;
+    min-width: 100%;
+    height: 30vh;
+}
+
+#header {
+    a.navbar-brand {
+        color: $white;
+        &:hover {
+            opacity: 0.5;
+        }
+        i.fa {
+            padding: 3px 6px;
+        }
+    }
+}
+
+// Dialogue box
+#dialogue {
+    position: absolute;
+    z-index: 1200;
+    background-color: $white;
+    width: 100vw;
+    max-height: 535px;
+    top: -150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 20px;
+    color: $grey;
+    text-align: center;
+    padding: 20px;
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .5s ease-out;
+    @media (min-width: $tablet) {
+    width: 50vw;
+    top: -150x;
+    }
+    h1 {
+        color: $grey !important;
+    }
+    .btn.btn-fab.btn-md{
+        position:relative;
+        top: -35px;
+    }
+    #headerImg {
+        width: 100%;
+        height: 200px;
+        background: url("http://goodyfeed.goodybookspteltd1.netdna-cdn.com/wp-content/uploads/2015/12/movie-660x330.jpg") no-repeat center;
+        background-size: cover;
+        margin-bottom: 50px;
+        position:relative;
+        top: 25px;
+        @media (min-width: $mobile) {
+          height: 300px;
+          top: 0;
+        }
+    }
+}
+
+#dialogue.slideup {
+    top: -1000px;
+}
+
+.form-control {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+// Moview Returned
+#movies {
+    background-color: $blue;
+    position: absolute;
+    z-index: 2000;
+    background-color: $white;
+    width: 100vw;
+    @media (min-width: $tablet) {
+        width: 80vw
+    }
+    top: 900px;
+    left: 50%;
+    transform: translate(-50%,
+    0);
+    padding: 5px;
+    color: $grey;
+    text-align: center;
+    height:auto;
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .5s ease-out;
+    h2 {
+        margin: 20px;
+    }
+    @media (min-width: $tablet) {
+        padding: 20px;
+    }
+}
+
+#movies.slideup {
+    top: -215px;
+    @media (min-width: $tablet) {
+        top: -140px;
+    }
+}
+
+#search-results {
+    position: relative;
+    overflow: scroll;
+    height: 100%;
+}
+
+#footer .navbar-text {
+    color: $white;
+}
+
+.tile * {
+    color: #444!important;
+    @media (min-width: $tablet) {
+        color: #fff!important;
+    }
+}
+
+.tile .title-bottom-text {
+    bottom: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: none;
+    padding: 15px;
+    margin-left: -15px;
+    text-align: left;
+    @media (min-width: $tablet) {
+        background-color: rgba(0, 0, 0, .6);
+        text-align: center;
+    }
+}
+
+.tile.background-image {
+    height: 100px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    @media (min-width: $mobile) {
+        height: 150px!important;
+    }
+    @media (min-width: $tablet) {
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px!important;
+    }
+}
+
+.card {
+    border: 1px solid #ccc;
+}
+
+.card .title {
+    font-weight: medium!important;
+    padding: 9px 0 24px;
+    font-size: 1.3em;
+    line-height: 1em;
+    position: relative;
+    top: -50px;
+    @media (min-width: $tablet) {
+        top: auto;
+    }
+}
+
+.tumbnail {
+    display: none;
+}
+
+.btn.btn-fab.btn-md {
+    padding-top: 0;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+a:active,
+button:active,
+button:focus,
+a:focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+    border: none;
+}
+
+#error {
+    color: red;
+    display: none;
+}
+
+
+h1{
+    color: red;
+}

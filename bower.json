@@ -1,0 +1,29 @@
+{
+  "name": "popover",
+  "homepage": "https://github.com/cyandream/popover",
+  "authors": [
+    "Michelle Burton <msmichelleburton@yahoo.com>"
+  ],
+  "description": "Explore Bootstrap Popover",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Popover",
+    "Bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.6"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.6",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}
